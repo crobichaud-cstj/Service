@@ -1,0 +1,24 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "description": "Contenu du 3E4 - Session Automne 2022",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crobichaud-cstj/Service.git"
+  },
+  "author": "Cedrick Robichaud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crobichaud-cstj/Service/issues"
+  },
+  "homepage": "https://github.com/crobichaud-cstj/Service#readme",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "express": "^4.18.1"
+  }
+}
