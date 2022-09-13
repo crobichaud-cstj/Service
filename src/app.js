@@ -1,9 +1,10 @@
 import dayjs from "dayjs";
 import express from "express";
 import planetsRoutes from "./routes/planets-routes.js";
-
+import errors from "./middlewares/errors.js";
 
 const app = express();
+app.use(express.json()); //Permettre à notre serveur de comprendre le json reçu
 
 //TODO: Ajouter code ici
 
@@ -48,4 +49,9 @@ app.get("/maths/:operation", (req, res) => {
 });
 
 app.use("/planets", planetsRoutes);
+
+app.use(errors);
+
+
+
 export default app;
